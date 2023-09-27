@@ -1,59 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Resource Files\Fonts">
-      <UniqueIdentifier>{3bd8c79a-2cb0-406e-99bf-ed777e15a468}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\Images">
-      <UniqueIdentifier>{7fdcfc81-c0a3-43b2-bdaf-f91e45299e77}</UniqueIdentifier>
+    <Filter Include="HikaruEngine">
+      <UniqueIdentifier>{1F2D50B0-0B90-DF54-B415-180BA057ABD7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\resources\fonts\FiraCode-Bold.ttf">
-      <Filter>Resource Files\Fonts</Filter>
-    </Font>
-    <Font Include="..\resources\fonts\FiraCode-Light.ttf">
-      <Filter>Resource Files\Fonts</Filter>
-    </Font>
-    <Font Include="..\resources\fonts\FiraCode-Medium.ttf">
-      <Filter>Resource Files\Fonts</Filter>
-    </Font>
-    <Font Include="..\resources\fonts\FiraCode-Regular.ttf">
-      <Filter>Resource Files\Fonts</Filter>
-    </Font>
-    <Font Include="..\resources\fonts\FiraCode-Retina.ttf">
-      <Filter>Resource Files\Fonts</Filter>
-    </Font>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\Hikaru\Core.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Hikaru.h" />
+    <ClInclude Include="src\HikaruEngine\Application.h">
+      <Filter>HikaruEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hikaru\Application.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\HikaruEngine\Core.h">
+      <Filter>HikaruEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hikaru.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\HikaruEngine\EntryPoint.h">
+      <Filter>HikaruEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hikaru\EntryPoint.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\HikaruEngine\Log.h">
+      <Filter>HikaruEngine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Hikaru\Application.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\HikaruEngine\Application.cpp">
+      <Filter>HikaruEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HikaruEngine\Log.cpp">
+      <Filter>HikaruEngine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

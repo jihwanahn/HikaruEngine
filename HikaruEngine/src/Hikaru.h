@@ -2,6 +2,6 @@
 
 // 
 
-#include "Hikaru/Application.h"
-
-#include "Hikaru/EntryPoint.h"
+#include "HikaruEngine/Application.h"
+#include "HikaruEngine/Log.h"
+#include "HikaruEngine/EntryPoint.h"
