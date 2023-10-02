@@ -20,12 +20,13 @@ project "HikaruEngine"
 
 	files
 	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/Source/**.hpp",
+		"%{prj.name}/Source/**.cpp"
 	}
 
 	includedirs
 	{
+		"%{prj.name}/Source",
 		"%{prj.name}/Thirdparty",
 		"%{prj.name}/Thirdparty/glfw/include",		
 		"%{prj.name}/Thirdparty/imgui/include"
@@ -69,8 +70,8 @@ project "Sandbox"
 
 	files
 	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/Source/**.hpp",
+		"%{prj.name}/Source/**.cpp"
 	}
 
 	includedirs
@@ -78,7 +79,7 @@ project "Sandbox"
 		"HikaruEngine/Thirdparty/glfw/include",
 		"HikaruEngine/Thirdparty", 
 		"HikaruEngine/Thirdparty/imgui/include",
-		"HikaruEngine/src"
+		"HikaruEngine/Source"
 	}
 
 	links

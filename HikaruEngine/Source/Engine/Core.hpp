@@ -9,3 +9,5 @@
 #else
 	#error Hikaru only supports Windows!
 #endif // HK_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

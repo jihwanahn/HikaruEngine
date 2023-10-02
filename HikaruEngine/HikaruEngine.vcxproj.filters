@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="HikaruEngine">
-      <UniqueIdentifier>{1F2D50B0-0B90-DF54-B415-180BA057ABD7}</UniqueIdentifier>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{3A8963B1-262B-8E87-0FE6-A1DBFB2615D8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Hikaru.h" />
-    <ClInclude Include="src\HikaruEngine\Application.h">
-      <Filter>HikaruEngine</Filter>
+    <ClInclude Include="Source\Engine\Application.hpp">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\HikaruEngine\Core.h">
-      <Filter>HikaruEngine</Filter>
+    <ClInclude Include="Source\Engine\Core.hpp">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\HikaruEngine\EntryPoint.h">
-      <Filter>HikaruEngine</Filter>
+    <ClInclude Include="Source\Engine\EntryPoint.hpp">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\HikaruEngine\Log.h">
-      <Filter>HikaruEngine</Filter>
+    <ClInclude Include="Source\Engine\Log.hpp">
+      <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Defines.hpp" />
+    <ClInclude Include="Source\Engine\Events\ApplicationEvent.hpp">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Events\Event.hpp">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Events\KeyEvent.hpp">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Events\MouseEvent.hpp">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hikaru.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\HikaruEngine\Application.cpp">
-      <Filter>HikaruEngine</Filter>
+    <ClCompile Include="Source\Engine\Application.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\HikaruEngine\Log.cpp">
-      <Filter>HikaruEngine</Filter>
+    <ClCompile Include="Source\Engine\Log.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

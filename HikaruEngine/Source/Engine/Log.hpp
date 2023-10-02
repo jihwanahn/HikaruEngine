@@ -2,9 +2,10 @@
 
 #include <memory>
 
-#include "Core.h"
+#include "Core.hpp"
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Hikaru
 {
@@ -31,7 +32,6 @@ namespace Hikaru
 #define HK_CORE_WARN(...)		::Hikaru::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define HK_CORE_ERROR(...)		::Hikaru::Log::GetCoreLogger()->error(__VA_ARGS__)
 #define HK_CORE_CRITICAL(...)	::Hikaru::Log::GetCoreLogger()->critical(__VA_ARGS__)
-#define HK_CORE_FATAL(...)		::Hikaru::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 
 // Client log macros
@@ -42,4 +42,3 @@ namespace Hikaru
 #define HK_WARN(...)			::Hikaru::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define HK_ERROR(...)			::Hikaru::Log::GetClientLogger()->error(__VA_ARGS__)
 #define HK_CRITICAL(...)		::Hikaru::Log::GetClientLogger()->critical(__VA_ARGS__)
-#define HK_FATAL(...)			::Hikaru::Log::GetClientLogger()->fatal(__VA_ARGS__)

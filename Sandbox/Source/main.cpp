@@ -1,6 +1,4 @@
-#include <Hikaru.h>
-#include <memory>
-
+#include <Hikaru.hpp>
 
 class Sandbox : public Hikaru::Application
 {
@@ -14,9 +12,10 @@ public:
 	{
 
 	}
+
 };
 
 Hikaru::Application* Hikaru::CreateApplication()
 {
 	return new Sandbox();
-} 
+}
