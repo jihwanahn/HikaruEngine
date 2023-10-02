@@ -1,8 +1,6 @@
 #pragma once
 
-#include "Events/Event.hpp"
-
-#include <sstream>
+#include "Event.hpp"
 
 namespace Hikaru {
 

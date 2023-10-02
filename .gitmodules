@@ -1,0 +1,6 @@
+[submodule "HikaruEngine/Thirdparty/spdlog"]
+	path = HikaruEngine/Thirdparty/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "HikaruEngine/Thirdparty/GLFW"]
+	path = HikaruEngine/Thirdparty/GLFW
+	url = https://github.com/c01d5t3w/glfw

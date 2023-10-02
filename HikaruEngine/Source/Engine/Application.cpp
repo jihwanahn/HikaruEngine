@@ -1,3 +1,4 @@
+#include "hkpch.hpp"
 #include "Application.hpp"
 
 #include "Events/ApplicationEvent.hpp"

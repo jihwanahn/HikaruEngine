@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hkpch.hpp</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HK_PLATFORM_WINDOWS;HK_BUILD_DLL;HK_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>Source;Thirdparty;Thirdparty\glfw\include;Thirdparty\imgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -97,7 +98,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hkpch.hpp</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HK_PLATFORM_WINDOWS;HK_BUILD_DLL;HK_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>Source;Thirdparty;Thirdparty\glfw\include;Thirdparty\imgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -122,7 +124,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hkpch.hpp</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HK_PLATFORM_WINDOWS;HK_BUILD_DLL;HK_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>Source;Thirdparty;Thirdparty\glfw\include;Thirdparty\imgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -146,20 +149,24 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Defines.hpp" />
     <ClInclude Include="Source\Engine\Application.hpp" />
     <ClInclude Include="Source\Engine\Core.hpp" />
     <ClInclude Include="Source\Engine\EntryPoint.hpp" />
-    <ClInclude Include="Source\Engine\Log.hpp" />
-    <ClInclude Include="Source\Defines.hpp" />
     <ClInclude Include="Source\Engine\Events\ApplicationEvent.hpp" />
     <ClInclude Include="Source\Engine\Events\Event.hpp" />
     <ClInclude Include="Source\Engine\Events\KeyEvent.hpp" />
     <ClInclude Include="Source\Engine\Events\MouseEvent.hpp" />
+    <ClInclude Include="Source\Engine\Log.hpp" />
     <ClInclude Include="Source\Hikaru.hpp" />
+    <ClInclude Include="Source\hkpch.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine\Application.cpp" />
     <ClCompile Include="Source\Engine\Log.cpp" />
+    <ClCompile Include="Source\hkpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

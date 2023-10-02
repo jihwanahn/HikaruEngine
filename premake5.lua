@@ -18,12 +18,15 @@ project "HikaruEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "hkpch.hpp"
+	pchsource "HikaruEngine/Source/hkpch.cpp"
+
 	files
 	{
 		"%{prj.name}/Source/**.hpp",
 		"%{prj.name}/Source/**.cpp"
 	}
-
+	
 	includedirs
 	{
 		"%{prj.name}/Source",

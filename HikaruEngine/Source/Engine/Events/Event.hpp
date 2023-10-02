@@ -1,9 +1,8 @@
 #pragma once
 
-#include "Core.hpp"
-#include "Events/Event.hpp"
-#include <string>
-#include <functional>
+#include "hkpch.hpp"
+#include "Engine/Core.hpp"
+
 
 namespace Hikaru {
 

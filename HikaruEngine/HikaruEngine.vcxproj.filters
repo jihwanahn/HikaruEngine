@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Core">
-      <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{DBC7D3B0-C769-FE86-B024-12DB9C6585D7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Events">
-      <UniqueIdentifier>{3A8963B1-262B-8E87-0FE6-A1DBFB2615D8}</UniqueIdentifier>
+    <Filter Include="Engine\Events">
+      <UniqueIdentifier>{5FAFB439-CB6F-3070-94AA-79ED002A754C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Defines.hpp" />
     <ClInclude Include="Source\Engine\Application.hpp">
-      <Filter>Core</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\Core.hpp">
-      <Filter>Core</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\EntryPoint.hpp">
-      <Filter>Core</Filter>
+      <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Engine\Log.hpp">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Defines.hpp" />
     <ClInclude Include="Source\Engine\Events\ApplicationEvent.hpp">
-      <Filter>Events</Filter>
+      <Filter>Engine\Events</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\Events\Event.hpp">
-      <Filter>Events</Filter>
+      <Filter>Engine\Events</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\Events\KeyEvent.hpp">
-      <Filter>Events</Filter>
+      <Filter>Engine\Events</Filter>
     </ClInclude>
     <ClInclude Include="Source\Engine\Events\MouseEvent.hpp">
-      <Filter>Events</Filter>
+      <Filter>Engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Log.hpp">
+      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Source\Hikaru.hpp" />
+    <ClInclude Include="Source\hkpch.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine\Application.cpp">
-      <Filter>Core</Filter>
+      <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="Source\Engine\Log.cpp">
-      <Filter>Core</Filter>
+      <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Source\hkpch.cpp" />
   </ItemGroup>
 </Project>
