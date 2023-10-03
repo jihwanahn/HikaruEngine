@@ -10,6 +10,12 @@ workspace "HikaruEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "HikaruEngine/Thirdparty/glfw/include"
+
+include "HikaruEngine/Thirdparty/glfw"
+
 project "HikaruEngine"
 	location "HikaruEngine"
 	kind "SharedLib"
@@ -31,10 +37,16 @@ project "HikaruEngine"
 	{
 		"%{prj.name}/Source",
 		"%{prj.name}/Thirdparty",
-		"%{prj.name}/Thirdparty/glfw/include",		
+		"%{IncludeDir.GLFW}",		
 		"%{prj.name}/Thirdparty/imgui/include"
 	}
 
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
+	
 	filter "system:windows"
 		cppdialect "C++20"
 		staticruntime "On"
